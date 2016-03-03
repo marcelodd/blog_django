@@ -1,0 +1,17 @@
+{%extends 'base.html'%}
+{%block posts%}
+	{%for post in object_list%}
+		<div class="post-preview">
+            <a href="{{post.slug}}">
+                <h2 class="post-title">
+                    {{post.title}}
+                </h2>
+	        </a>
+                <h3 class="post-subtitle">
+                    {{post.text|slice:'150'}}
+                </h3>
+            <p class="post-meta">Postado em {{post.category.name}}, criado em {{post.date}}</p>
+        </div>
+        <hr>
+	{%endfor%}
+{%endblock%}

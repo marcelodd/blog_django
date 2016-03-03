@@ -1,0 +1,13 @@
+python django-admin startproject nomedoprojeto
+python manage.py startapp nomedoaplicativo
+
+python manage.py makemigrations nomedo app
+python manage.py magrate
+python manage.py sqlmigrate nome do app 0001
+
+
+
+--Django admin configuration
+--Create an admin user
+python manage.py createsuperuser
+
